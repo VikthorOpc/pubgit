@@ -1,0 +1,17 @@
+body{
+    background: crimson;
+    color: black;
+}
+
+.underline{
+    text-decoration: underline black;
+}
+
+.encadrer-un-contenu{
+    border: 1px  solid black;
+    padding: 5px;
+}
+
+.blueue{
+    color: blue;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--Le doctype permet de définir le type de lecture que le navigateur doit adopter, dans le cas présent le navigateur détect un document en HTML-->
+<html lang="fr">
+    <!--Cette balise utilise l'attribut lang pour permettre au navigateur de savoir quelle languenest utilisée dans le document-->
+<head>
+    <!--La balise head permet de définir les informations contenues dans la barre de navigation et les paramètres du navigateur-->
+    <meta charset="UTF-8">
+    <!---Dans cette première balise métadonnée on défini le jeu de charactéres utilisé par le document-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Cette métadonner permet de définir les préférences de sécurité et de comptabilité du document avec tnterne explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Cette métadonnée permet de définir le iformations nécessaires au dimensionnement du document en fontion de l'appareil sur lequel il est lu-->
+    <meta name ="description" content="lorem">
+    <!--La métadonnée description permet de définir une courte déscription du document pour faciliter la recherche par moteur de reherche-->
+    <link rel="stylesheet" href="index.css">
+    <!--La bsalise link nous permet de définir un lien entre un document HTML et un autre fichier (CSS,JS...)-->
+    <title>Sémantique le retour</title>
+    <!--Permet de définir le nom de l'onglet qui est ouvert sur votre document-->
+    <link rel="shortcut icon" href="fapicon.ico" type="image/x-Icon">
+    <!--Ce link permet de définir le logo de l'onglet et des barres de raccourcis-->
+</head>
+<body>
+    <header>
+        <!--Permet de définir pour le navigateur, l'emplacement de la partie haute du site-->
+        <img src="" alt="">
+        <!--La balise img est une balise qui permet d'inserer une image dans le document HTML on utilise spn attribut "src" pour définir le chemin du fichier à afficher, son second attribut "alt" permet de définir un texte aafficher en cas d'impossibilié pour l'immage de s'afficher-->
+        <nav>
+            <!--Permet de définir, pour le navigateur, l'mplacement de la barre de navigation du document-->
+            <ul>
+                <!--Nous permet de définir l'emplacement d'une liste non ordonnée-->
+                <a href="a"><li>Plus qu'un lien</li> </a>
+                <!--la balise "a" permet de définir le lien entre différents document ou points d'un document-->
+                <a href="./Untitled-1.html"><li>Plus lien pas sur</li> </a>
+                <!--La balise peut envoyer sur un autre document en définissant une arborescence ou sur une partie d'un document en définissqnt un id-->
+                <a href="a"><li>Un lien waouh</li> </a>
+                <!--List Item "li" qui permet de définir un objet de la liste-->
+                <a href="a"><li>Un lien</11> </a>
+                    <!--La balise "li" est imbriqué dans la balise "a" pour permettre la sélection du lien sur la totalité de l'image-->
+            </ul>
+        </nav>
+        <a href=""><img src="" alt=""></a>
+        <!--De la meme maniére la balise img est imbriqué dans la balise "a" permettre la sélection sur la totalité de l'image-->
+    </header>
+    <main>
+        <!-- IMBRICATION-->
+        <section>
+<!-- Dans notre exemble section sera la balise mère ou parent-->
+<article>
+    <!--cette balise article sera concidérée comme le premier enfant de la balise section-->
+</article>
+<article>
+    <!--Celle ci le second-->
+</article>
+<article>
+    <!--Celle ci le derner-->
+</article>
+
+        </section>
+
+    <section>
+        <article>
+            <h1></h1>
+            <p>Lorem, ipsum <em>dolor</em> sit amet consectetur adipisicing elit. <strong>Dignissimos</strong> labore iusto amet ut totam impedit temporibus laudantium. Aliquam, <mark>consequuntur</mark> velit! Cumque sunt magnam dolor architecto quaerat ratione aperiam eligendi explicabo.</p>
+<!--Les balises mark, strong et em permettent de définir l'importance de certains termes ou pans de phrases afin de pouvoir alimenter le référencement organique du site, il mettent en évidence selon la hiérarchier suivante:
+1. strong
+2. em
+3. mark
+-->
+        </article>
+        <aside>
+<img src="" alt="">
+<p></p>
+        </aside>
+
+    </section>
+
+    <fieldset>
+<legend>Un formuaire</legend>
+<!--Un fieldset permet de définir un encadrement à une partie du document et la balise legend permet de définir le titre de cet encadrement-->
+<label for="nom">Nom :</label>
+<input type="text" name="nom" id="nom" placeholder="Votre nom">
+<!--Un label permet de définir un texte accompagnant un input, à lequel il est relié à l'aide de l'attribut for sur la balise label et l'attribut name sur la balise input-->
+<form action="#">
+    <label for="prenom">Prénom</label>
+    <input type="text" name="prenom" id="prenom" placeholder="Votre prénom">
+    <label for="mail">Votre mail</label>
+    <input type="text" name="mail" id="mail" required>
+    <label for="pass">Mot de passe</label>
+    <input type="password" name="pass" id="pass" required>
+    <label for="passconf">Confimez votre mot de passe :</label>
+    <input type="password" name="passconf" id="passconf" required>
+    <input type="button" value="S'inscrire">
+</form>
+<!--Pour pouvoir rendre le formulaire utilisable je dois imbriquer tous les inputs dans une balise form qui permettra de renvoyer à la fonction de récupération des données du formulaire, chacun des inputs devra etre défini en fonction de son utilisation et des attibuts spéciaux tel que required pourront etre utiliseé pour pouvoir renforcer la sécurité de ce formulaire-->
+    </fieldset>
+
+    <div></div>
+    <!--Une div est une balise modulable de type block c'est a dire que lelle ci va s'empiler sur les autres balises div-->
+    <span></span>
+<!--U spam est une balise modulable de type inline ce qui signifie que les span s'intègre à la suite les uns des autres-->
+
+<!--ATTRIBUTS UNIVERSELS-->
+<div class="exemple"></div>
+<div id="exe"></div>
+<!--class et id sont des attributs universels, qui pevent donc s'appliquer sur toutes les balises, il permettent d'identifier les baises par un nom unique 
+La class est un nom réutilisable qui permet de définir un style pour un élément récurrent 
+l'id lui permet d'identifier spécifiquement un élélment et ne doit pas etre dupliquer 
+Un id et une class peuvent ce cumuler dans une seul balise
+!!!!!!! Les id et les class sont sensibles à la casse, ce qui signifie que Exemple et exemple sont deux id ou class différents-->
+    </main>
+
+
+
+</body>
+</html>

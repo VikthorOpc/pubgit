@@ -1,0 +1,40 @@
+/*General*/
+body{
+    background: cyan;
+    color: darkgray;
+}
+/* En css pn sélectionne la baslise par le nom de cette dernière, 
+on définira ensuite les propriétés à modifier ainsi que les différentes valeurs
+ des propriétés est séparée par un "j" qui indique au code que la valeurde la propriété es terminé
+
+.exemple{
+    height: 250px;
+    widht: 250px;
+    border: black 5px ridge;
+    border-radius: 25px 25px 25px 0;
+    backgrond: url
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Dans cet exemple on va réaiser la selection de la class exemple via l'utilisation du 
+définisseur de clas "." , dans les propriétés modifiés on va retrouver des propriétés de taille,
+widht et height, et des propriété visuelles border et background, border est une propriété qui
+va regrouper plusieurs autres propriété tel que border -type, border -color... et background sera
+défini par chacune des propriétés qui suivra tel background -size ou background repeat
+*/
+#exe{
+    height: 350px;
+    width: 350px;
+    background-color: darkred;
+    border-radius: 25px;
+    transition: 1.5s;
+}
+#exe:hover{
+    background-color: darkturquoise;
+}
+
+/* Dans cet exemple on sélectionne la balise via son id à l'aide de "a", on lui défini différentes
+propriétés et on défini un nouvel état pour cet balise, un état au survol, à l'aide 
+de la pseudo classe ":hover", dans cet état on définit une propriété différente qui ne s'affiche 
+qu'au survol de la souris. Pour fluidifier l'animation on défini un timing de transition dans l'état 
+initial. */
