@@ -16,7 +16,8 @@ on définira ensuite les propriétés à modifier ainsi que les différentes val
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* Dans cet exemple on va réaiser la selection de la class exemple via l'utilisation du 
+
+ /* Dans cet exemple on va réaiser la selection de la class exemple via l'utilisation du 
 définisseur de clas "." , dans les propriétés modifiés on va retrouver des propriétés de taille,
 widht et height, et des propriété visuelles border et background, border est une propriété qui
 va regrouper plusieurs autres propriété tel que border -type, border -color... et background sera

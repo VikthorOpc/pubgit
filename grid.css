@@ -1,0 +1,133 @@
+.griditem{
+    height: 250px;
+    
+    background: linear-gradient(65deg, goldenrod, blue, green);
+    /* Pour l'utilisation d'un dégradé, il fautdra utiliser la propriété backgroud ou
+    background ou background-image, la création du dégradé se transformant en mise en place d'une image de ce 
+    dernier */
+    grid-column: span 6;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.first{
+    grid-column: span 12;
+}
+
+.sec{
+    grid-column: span 8;
+}
+
+.third{
+    grid-column: span 4;
+}
+
+.four{
+grid-column: span 2;
+}
+
+.five{
+grid-column: span 10;
+}
+
+.six{
+    grid-column: span 6;
+}
+
+#backchange{
+    transition: 0.8s ease;
+}
+
+#backchange:hover{
+    background: linear-gradient(120deg, pink,red,cyan);
+}
+
+#rotate{
+    transition: 1.2s ease-in-out;
+}
+
+#rotate:hover{
+    transform: rotate(3600deg);
+    border-radius: 12%;
+}
+
+#zoom{
+    transition: ease-in-out 0.8s;
+}
+
+#zoom:hover{
+    transform: scale(0.01);
+}
+
+#trans{
+    transition: ease-in-out 0.6s;
+}
+
+#trans:hover{
+    transform: translate3d(350px, 750px, 0);
+}
+
+#up{
+
+}
+
+#up:hover{
+    transform: translateY(-55px);
+    border-radius: 37%;
+    box-shadow: black 100px 25px 25px 25px;
+    scale: 0.9;
+}
+
+#push{
+transition: 0.8s ease;
+box-shadow: 5px 5px 2px 2px black;
+}
+
+#push:hover{
+scale: 0.95;
+transform: translateY(-10px) ;
+border-radius: 25px;
+}
+
+@keyframes anim{
+
+0%{
+    border: magenta 5px solid;
+box-shadow: deepskyblue 5px 5px 25px 5px;
+}
+
+10%{
+    border: white 5px solid;
+    box-shadow: goldenrod 5px 5px 25px 5px;
+}
+
+15%{
+    border: black 5px solid;
+    box-shadow: white 5px 5px 25px 5px;
+}
+
+25%{
+    border: yellow 5px solid;
+    box-shadow: cyan 5px 5px 25px 5px;
+}
+
+50%{
+    background: mediumblue;
+}
+
+60%{
+    background: deepskyblue;
+}
+
+75%{
+    background: orangered;
+}
+
+}
+
+div{
+    animation: anim 2s infinite;
+}
