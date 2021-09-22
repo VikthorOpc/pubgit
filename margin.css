@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cornsilk;
+}
+
+.margingtton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 205px;
+    background-color: deeppink;
+    border: peachpuff;
+    margin: 50px;
+    padding: 50px;
+}
+/*la padding correspond a la marge interne du conteneur, qui se défini entre la taille initiale de ce dernier et le bord de lélément*/
+/*le margin correspond à la marge externe de l'élément ce qui défini l'écart entre les bords de l'élément et les autres éléments du document*/

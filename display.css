@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    box-sizing: content-box;
+}
+/*flexiplication*/
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: cyan;
+    border: darkmagenta 2px solid;
+    width: 100vw;
+    height: 100vh;
+}
+
+.flexitem{
+    height: 250px;
+    width: 250px;
+    background: darkred;
+    border: darkseagreen 1px solid;
+}
+
+.theone{
+order: -1;
+}
+
+/*fin Flexplication*/
+/*block*/
+.block{
+height: 100vh;
+}
+
+.blockitem{
+    background: chocolate;
+    display: block;
+    width: 250px;
+    height: 50px;
+}
+/*A plus de Block*/
+
+/*Griduation*/
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+
+.griditem{
+    background: rgb(189, 173, 32);
+    height: 250px;
+    width: 250px;
+    grid-column: span 3;
+}

@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.hericendre{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.hericendre:active{
+    background-color: yellowgreen;
+}
+/* defini un style au moment du clic sur l'element cible*/
+.hericendre:hover{
+    color: turquoise;
+}
+/*defini un style au moment du survol de la souris sur l'element ciblé*/
+.hericendre::after{
+    content: "j'ai été créer avec un pseudo-élément";
+}
+/*creer un element qui sera le dernier enfant dun element parent ainsi que definir son style*/
+.hericendre::before{
+    content: "j'ai été créer en avance";
+}
+/*defini la creation du premier enfant dun element parent aindi que son style, de la meme maniere il sera absent du HTML mais sera une ezxistence sur la page*/
+.hericendre:hover::after{
+    content: "j'apparais au survol";
+    border: 1px solid violet;
+    background-color: saddlebrown;
+}
+/*on voit sur cet exemple que lon peut cumuler des pseudo-classes et des pseudo-elements ce qui nous permet de creer un element specifique qui apparait au survol*/
+.hericendre::selection{
+    background-color: red;
+    color: burlywood;
+}
+/*le pseudo-element ::selection permet de definir le style de la selection de texte dans l'element cible*/
+.goupix:visited{
+    color: yellowgreen
+}
+/*le pseudo-classe :visited permet de definir le style dun lien apres avoir cliqué sur ce dernier*/
+#poussifeu{
+    width: 500px;
+    height: 300px;
+    background-color: silver;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#poussifeu:target{
+    color: turquoise;
+    border: tomato solid 5px;
+}
+
+#poussifeu::after{
+    content: "bounjour j'apprend";
+    color: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    border: chartreuse;
+}
+
+/*     POSITION     */
+
+.hericendre{
+position: absolute;
+/*dépend du conteneur dans lequel est situé l'élement position*/
+position: fixed;
+/*positionne un élément indélémént indépendant du reste du docuument*/
+position: relative;
+/*positionne l'élément en fonction de la position des autres éléments du document*/
+position: static;
+/*position par défault de tout élément*/
+position: sticky;
+/*position d'adherence qui viendra se fixer a un rebord d'un élémént*/
+
+}
+
+top:;
+/*ces différentes propriétés permettent de calculer la position d'un élément en fonction de la direction dans lequel il est sélectionnaé*/
+bottom:;
+
+left:;
+right:;

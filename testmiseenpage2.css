@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    
+  }
+  body{
+    height: 100vh;
+    background-image:url(../image\ de\ fond\ acceuil\ \(1\).jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   
+  }
+   
+ 
+  .header {
+    background-image: url(../preprocessed.jpg);
+    position: static;
+    width: 349px;
+    width: 1308px;
+    font-family: 'Lobster';
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;  
+    justify-content: space-around; 
+    align-items: center;
+    height: 30vh;
+    list-style: none;
+   
+  }
+  .header li {
+    cursor: pointer; 
+    order: 3;
+  }
+  .logo img{
+    width: 185px;
+    height: 186.1px;
+    opacity: 0.7;
+    border-radius: 100%;
+    order: 1;
+   background-size: cover;
+   position: absolute;
+
+   left: 0em;
+   top: 0em;
+  }
+  .header a {
+    font-size: 5vh;
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+  }
+  .header a:hover {
+    border-bottom: 1px solid rgb(255, 250, 250); 
+  }   
+  
+  
+ 
+    .contener{
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  
+  }
+  .carte {
+      display: grid;
+      grid-template-columns: 22vw;
+      grid-template-rows: 290px 320px 80px;
+      width: 22vw;
+      height: 90vh;
+      background: white;
+      box-shadow: grey 5px 5px 7px ;
+      font-family: 'Trebuchet MS', Helvetica, sans-serif;
+      text-align: center;
+      transition: 2s;
+      
+    }
+  .carte-vidber{
+      width: 10vw;
+      height: 10vw;
+    }
+  .carte-imgC {
+      background: url("./img/etaples\ c.jpg");
+      width: 22vw;
+      background-size: cover;
+  }
+  .carte-imgP {
+      background: url("./img/pt.jpg");
+      width: 22vw;
+      background-size: cover;
+    }
+  
+  .carte-text { 
+      display: grid;
+      align-items: center;
+      margin: 0px;
+      color:green;
+      
+      
+  }
+  .carte-text h2 {
+      letter-spacing: 0.7em;
+      font-size: 2.85vh;
+  }
+  .carte-text p{
+      letter-spacing: 0.05em;
+      font-size: 2.20vh;
+    
+  }
+  .detail {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      background: green;
+      cursor: pointer;
+      font-size: 1.5vh;
+      height: 6.19vh;
+      transition: 0.8s; 
+  }
+  .detail p{
+      font-family: 'Trebuchet MS', Helvetica, sans-serif;
+      letter-spacing: 0.5em;
+      position: relative;
+      top: 2.3vh;
+      display: flex;
+      margin-top: 0vh;
+      justify-content: center;
+      color: rgb(255, 255, 255);
+    }
+  .carte2 {
+      display: grid;
+      grid-template-columns: 22vw;
+      grid-template-rows: 290px 320px 80px;
+      width: 22vw;
+      height: 90vh;
+      background: white;
+      box-shadow: grey 5px 5px 7px ;
+      font-family: 'Trebuchet MS', Helvetica, sans-serif;
+      text-align: center;
+      transition: 2s;
+      
+    }
+
+  
+  .carte-text2 { 
+      display: grid;
+      align-items: center;
+      margin: 35px;
+      color:green;
+      
+      
+  }
+  .carte-text2 h2 {
+      letter-spacing: 0.7em;
+      font-size: 2.5vh;
+  }
+  .carte-text2 p{
+      letter-spacing: 0.15em;
+      font-size: 1.23vh;
+  }
+  .detail2 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      background: sienna;
+      cursor: pointer;
+      font-size: 1.5vh;
+      height: 6.19vh;
+      transition: 0.8s; 
+  }
+  .detail p{
+      font-family: 'Trebuchet MS', Helvetica, sans-serif;
+      letter-spacing: 0.5em;
+      position: relative;
+      top: 2.3vh;
+      display: flex;
+      margin-top: 0vh;
+      justify-content: center;
+      color: rgb(255, 255, 255);
+    }
+    .contener2{
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        
+        }
+        .carte2 {
+            display: grid;
+            grid-template-columns: 22vw;
+            grid-template-rows: 290px 320px 80px;
+            width: 22vw;
+            height: 90vh;
+            background: white;
+            box-shadow: grey 5px 5px 7px ;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            text-align: center;
+            transition: 2s;
+            position: absolute;
+            right: 7em;
+            top: 11.63em;
+
+            
+          }
+          
+  .carte-text2 h2 {
+      letter-spacing: 0.7em;
+      font-size: 2.5vh;
+  }
+  .carte-text2 p{
+      letter-spacing: 0.15em;
+      font-size: 1.23vh;
+  }
+  .detail2 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      background: green;
+      cursor: pointer;
+      font-size: 1.5vh;
+      height: 6.19vh;
+      transition: 0.8s; 
+  }
+
+  .contener3{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    
+    }
+    .carte3 {
+        display: grid;
+        grid-template-columns: 22vw;
+        grid-template-rows: 290px 320px 80px;
+        width: 22vw;
+        height: 90vh;
+        background: white;
+        box-shadow: grey 5px 5px 7px ;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+        text-align: center;
+        transition: 2s;
+        position: absolute;
+        left: -50em;
+        top: 0em;
+
+        
+      }
+      
+.carte-text3 h2 {
+  letter-spacing: 0.7em;
+  font-size: 2.5vh;
+}
+.carte-text3 p{
+  letter-spacing: 0.15em;
+  font-size: 1.23vh;
+}
+.detail3 {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: green;
+  cursor: pointer;
+  font-size: 1.5vh;
+  height: 6.19vh;
+  transition: 0.8s; 
+}

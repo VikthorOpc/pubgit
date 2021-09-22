@@ -10,13 +10,7 @@
     
     body, html{height:100%;}
     
-    body{
-        background: rgb(108, 233, 185);
-    color: rgb(4, 0, 255);
-    
-    text-align:center;
-    
-    }
+   
     
      
     
@@ -42,7 +36,7 @@
     
     bottom:0;
     
-    width:50%;
+    width:100%;
     
     padding-top:50px;
     

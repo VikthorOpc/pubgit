@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    /* cet élément permet de supprimer les espaces blancs entre le bord de l'écran et la page
+    internet */
+}
+
+body{
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.whiteshadow{
+    height: 250px;
+    width: 250px;
+    background: blue;
+    border:darkgreen ;
+    box-shadow: whitesmoke 1px 1px 5px 1px ;
+    transition: 0.8s ease;
+}
+
+.one:hover{
+box-shadow: white 15px 1px 5px 1px;
+/*ici on modifie la premiére des valeurs ce qui va forcer le déplacement horizontal de notre
+élément*/
+}
+
+.two:hover{
+box-shadow: white 1px 15px 5px 1px;
+/*on modifie ici la seconde valeure ce qui modifie le déplacement verticale*/
+}
+
+.three:hover{
+box-shadow: white 1px 1px 25px 1px;
+/*sur la troisième valeure on va pouvoir travailler sur le flou étalé par l'ombre*/
+}
+
+.four:hover{
+    box-shadow: white 1px 1px 5px 15px;
+    /*sur la derniére valeur on va modifier l'étalement de l'ombre*/
+}
+
+.whiteshadow:hover{
+width: 300px;
+border-radius: 25%;
+transform: rotate(180deg);
+}
+
+.whiteshadow:active{
+    box-shadow: inset white 0 0 5px 1px;
+}
+/*l'ajout de la propriété inset permet de travailler une ombre interne à l'élément et non plus
+externe*/

@@ -1,4 +1,57 @@
-body{
-    background: rgb(108, 233, 185);
-    color: rgb(4, 0, 255);
+*
+{margin: 0;}
+  body{
+   margin: 0;
+ padding: 0;
+}
+header {
+ background: rgb(245, 238, 238); 
+ width: 100%; 
+}
+.header {
+ background-image: url(../img/preprocessed.jpg);
+
+ font-family: 'Lobster';
+   background-repeat: no-repeat;
+   background-size: cover;
+ display: flex;  
+ justify-content: space-between; 
+ align-items: center;
+ height: 30vh;
+ width:200vh;
+ list-style: none;
+ 
+}
+.header li {
+ cursor: pointer; 
+ order: 3;
+}
+.logo img{
+width: 340px;
+height: 291px;
+opacity: 0.8;
+border-radius: 100%;
+order: 1;
+}
+.header a {
+   font-size: 5vh;
+ text-decoration: none; 
+ color: rgb(0, 0, 0); 
+}
+.header a:hover {
+ border-bottom: 1px solid rgb(255, 250, 250); 
+}   
+.backim{
+ background-image: url(../img/82459342-1-0-6187723-h-000100000000.jpg);
+ background-repeat: no-repeat;
+ 
+display: flex;  
+justify-content: space-between; 
+ width: 50px;
+ height: 50px;
+ list-style: none;
+}  
+.backim li{
+ cursor: pointer;
+
 }

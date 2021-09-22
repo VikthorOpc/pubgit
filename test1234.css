@@ -1,6 +1,8 @@
 /*  Reset & General
 ---------------------------------------------------------------------- */
-* { margin: 0px; padding: 0px; }
+* { margin: 0px; 
+  padding: 0px;
+ }
 body {
   font-family: "Open Sans", sans-serif; 
   overflow:hidden;  
@@ -167,7 +169,7 @@ body {
   -ms-transform: rotate(45deg); 
     -webkit-transform: rotate(45deg); 
     transform: rotate(45deg); 
-  -webkit-transition: all 50ms ease-out;
+  
 }
 .checklist a .x.animate{
   width:4px;
@@ -187,7 +189,7 @@ body {
   -ms-transform: rotate(13deg); 
     -webkit-transform: rotate(135deg); 
     transform: rotate(135deg);  
-  -webkit-transition: all 50ms ease-out;
+  
 }
 .checklist a .y.animate{
   width:8px;
@@ -964,8 +966,7 @@ div.sku strong{
   left:-1px;
 }
 
-.sizes-large{
-}
+
 .sizes-large span{
   font-weight:600;
   color:#b0b0b0;
