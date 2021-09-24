@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+}
+/*le sekecteur * es appelé sélecteur universel il permet de ciblé la totalité des éléments du document mais ne permettra pas d'utiliser les pseudo-classes et les pseudo éléments*/
+
+body{
+    background: bisque;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 80vw;
+    background: chartreuse;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main section{
+    background: chocolate;
+    width: 60vw;
+    height: 80vh;
+}
+
+.first + aside{
+    background: url(./img/code.jpg);
+}
+#second > div{
+    font-variant: small-caps;
+}
+
+article{
+    border-radius: 25px;
+    border: orange 5px solid;
+    height: 15vh;
+}
+
+article + aside{
+    background: cornflowerblue;
+    width: 50vw;
+    height: 30vh;
+}
+
+div ~ span {
+    background: crimson;
+    height: 20vh;
+}
+
+div > span {
+    background: darkmagenta;
+}

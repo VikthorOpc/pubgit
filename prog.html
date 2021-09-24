@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./prog.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">WAZAAAAA</span>
+        </div>
+    </div>
+<!--la div de classe bgimg-1 permet de definir l'emplacement du premier fond d'ecran ainsi que sa hauteur, on utilise ensuite la div de classe caption pour positionner le texte au centre de l'element et le span de classe border pour travailler sur le style de l'element contenant le texte-->
+
+    <div style="color: #777;background-color: white;text-align: center;padding:50px 80px;text-align: justify;">
+<!--on utilise dans cette balise un attribut style qui permettra de definir le style comme en CSS, l'attribut est prioritaire sur le style en CSS, il sera donc applique avant le style de la feuille CSS-->
+
+        <h3 style="text-align: center;">Compétences</h3>
+
+        <span class="comp">
+            <ul>
+                <li>HTML<progress max="100" value="80">80%</progress></li>
+                <li>CSS<progress max="100" value="80">90%</progress></li>
+                <li>Javascript<progress></progress></li>
+                <li>PHP<progress max="100" value="60">60%</progress></li>
+                <li>MySQL<progress max="100" value="70">70%</progress></li>
+            </ul>
+            <!--on utilise les balises progress pour pouvoir definir une barre de progression, les attributs max et value permettent de definir l'emplacement de la progression-->
+
+        </span>
+    </div>
+
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border" style="background-color: transparent; font-size: 25px; color: #f7f7f7;">Qualités</span>
+        </div>
+    </div>
+
+    <div style="position: relative;">
+        <div class="qual" style="color: #ddd; background-color: #282e34; text-align: center; padding: 50px 80px; text-align: justify;">
+        <p>
+            <ol>
+                <li>renard</li>
+                <li>ornithorinque</li>
+                <li>Babouche</li>
+            </ol>
+        </p>
+    </div>
+    </div>
+
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border" style="background-color: transparent; font-size: 25px; color: #f7f7f7;">Loisir</span>
+        </div>
+    </div>
+
+    <div style="position: relative;">
+        <div class="qual" style="color: #ddd; background-color: #282e34; text-align: center; padding: 50px 80px; text-align: justify;">
+            <div class="cards">
+                <article class="card">
+                    <header>
+                        <h2>La randonnée</h2>
+                    </header>
+                    <img src="../Etaples.jpg" alt="">
+                    <div class="content">
+                        <p>Pour découvrir de nouveaux paysages</p>
+                    </div>
+
+                </article>
+                <article class="card">
+                    <header>
+                        <h2>Le karaté</h2>
+                    </header>
+                    <img src="../IMG_20210913_142602.jpg" alt="">
+                    <div class="content">
+                        <p>Un sport de bonhomme</p>
+                    </div>
+
+                </article>
+                <article class="card">
+                    <header>
+                        <h2>La cuisine</h2>
+                    </header>
+                    <img src="../IMG_20210914_135410.jpg" alt="">
+                    <div class="content">
+                        <p>Pour mieux manger</p>
+                    </div>
+                    
+                </article>
+                <article class="card">
+                    <header>
+                        <h2>Les jeux-vidéos</h2>
+                    </header>
+                    <img src="../carte.png" alt="">
+                    <div class="content">
+                        <p>Le meilleur de tout les loisirs</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">RASPUTINE</span>
+        </div>
+    </div>
+</body>
+</html>

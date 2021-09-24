@@ -1,0 +1,114 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: green;
+}
+/*cette selection permet de definir le comportement des balises generales du document afin d'eliminer les marges et definir le style de texte*/
+
+.bgimg-1, .bgimg-2, .bgimg-3{
+    position: relative;
+    opacity: 1.45;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*on defini les proprietes communes des backgrounds pour eviter de recopier 1000x la meme chose et condenser le code contenu dans le css*/
+
+.bgimg-1{
+    background-image: url(../Etaples.jpg);
+    min-height: 100%;
+}
+.bgimg-2{
+    background-image: url(../photo_de_fond.jpg);
+    min-height: 400px;
+}
+.bgimg-3{
+    background-image: url(../image\ de\ fond\ acceuil\ \(1\).jpg);
+    min-height: 400px;
+}
+
+.caption{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: darkmagenta;
+}
+
+.caption span.border{
+    background-color: darkolivegreen;
+    color: darksalmon;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    border-radius: 5px 5px;
+    box-shadow: 5px 5px 12px 15px pink;
+}
+
+h3{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: darkgoldenrod;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+}
+/*le grid template en autofill permet de realiser automatiquement la definition des colonnes par rapport a la taille de la premiere et la taille de la derniere colonne dans un maximum de 12 colonnes*/
+.card{
+    display: grid;
+    grid-template-columns: max-content 200px 1fr;
+    background-color: red;
+    border-radius: 15px 15px 0 0;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    color: maroon;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1.5s;
+    transition: ease-in-out;
+}
+
+.card:hover .content{
+    background: linear-gradient(68deg, violet, yellowgreen);
+    opacity: 0;
+    color: mediumspringgreen;
+}
+
+.card img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+.progress{
+    display: flex;
+    float: right;
+}
+
+.qual{
+    display: flex;
+    justify-content: center;
+}
+
